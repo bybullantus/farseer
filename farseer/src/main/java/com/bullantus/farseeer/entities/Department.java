@@ -7,6 +7,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
 import lombok.AccessLevel;
@@ -21,16 +23,25 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "regions")
-public class Region extends BaseEntity{
+@Table(name = "departments")
+public class Department extends BaseEntity{
 
+	
 	@Id
 	@Column(name = "id", nullable = false)
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@SequenceGenerator(name = "regions", sequenceName = "regions.gen", initialValue = 1, allocationSize = 1)
+	@SequenceGenerator(name = "departments", sequenceName = "departments.gen", initialValue = 1, allocationSize = 1)
 	@Setter(value = AccessLevel.NONE)
 	private Integer id;
 	
-	@Column(name = "name",length = 30)
+	@Column(name = "name")
 	private String name;
+	
+	@JoinColumn(name = "manager_id")
+	@ManyToOne
+	private Employe manager;
+	
+	@ManyToOne
+	@JoinColumn(name = "location_id")
+	private Location location;
 }

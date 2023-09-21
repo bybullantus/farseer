@@ -1,5 +1,7 @@
 package com.bullantus.farseeer.entities;
 
+import java.util.Date;
+
 import com.bullantus.farseeer.entities.base.BaseEntity;
 
 import jakarta.persistence.Column;
@@ -21,16 +23,22 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "regions")
-public class Region extends BaseEntity{
+@Table(name = "jobs")
+public class Job extends BaseEntity{
 
 	@Id
 	@Column(name = "id", nullable = false)
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@SequenceGenerator(name = "regions", sequenceName = "regions.gen", initialValue = 1, allocationSize = 1)
+	@SequenceGenerator(name = "jobs", sequenceName = "jobs.gen", initialValue = 1, allocationSize = 1)
 	@Setter(value = AccessLevel.NONE)
 	private Integer id;
 	
-	@Column(name = "name",length = 30)
-	private String name;
+	@Column(name = "title",length = 35)
+	private String title;
+	
+	@Column(name = "min_salary")
+	private Double minSalary;
+	
+	@Column(name = "max_salary")
+	private Double maxSalary;
 }
