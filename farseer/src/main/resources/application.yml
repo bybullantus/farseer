@@ -1,0 +1,41 @@
+spring:
+   datasource:
+      url: jdbc:postgresql://localhost:5432/farseer
+      #url: jdbc:postgresql://172.16.117.2:5432/farseer
+      username: postgres
+      password: affacan
+      #password: VnJAdtU5COoNMwm
+      hikari:
+         connectionTimeout: 20000
+         maximumPoolSize: 5
+   jpa: 
+      hibernate: 
+         ddl-auto: update
+      show-sql: false
+      generate-ddl: false
+   mvc: 
+      pathmatch: 
+         matching-strategy: ANT_PATH_MATCHER
+         
+         
+server: 
+   port: 8081
+   
+logging:
+   pattern:
+      rolling-file-name: farseerlog-%d{yyyy-MM-dd}.%i.log
+   file:
+      name: farseerlog.log
+   
+
+
+springdoc: 
+   api-docs: 
+      path: /seer-api-docs
+   packages-to-scan: com.atlas.seer.RestApi
+   swagger-ui:
+      path: /seer-documentation 
+      tryItOutEnabled: true
+      operationsSorter: method
+      tagsSorter: alpha
+      filter: true
