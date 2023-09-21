@@ -3687,3 +3687,101 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2023-09-21T23:43:09.265+03:00  INFO 11489 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2023-09-21T23:43:09.267+03:00  INFO 11489 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2023-09-21T23:43:09.821+03:00  INFO 11489 --- [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 221 ms
+2023-09-21T23:53:00.661+03:00  INFO 12065 --- [main] c.bullantus.farseeer.FarseerApplication  : Starting FarseerApplication using Java 17.0.2 with PID 12065 (/Users/nejatboy/git/farseer/farseer/target/classes started by nejatboy in /Users/nejatboy/git/farseer/farseer)
+2023-09-21T23:53:00.662+03:00  INFO 12065 --- [main] c.bullantus.farseeer.FarseerApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-09-21T23:53:01.197+03:00  INFO 12065 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-21T23:53:01.217+03:00  INFO 12065 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+2023-09-21T23:53:01.762+03:00  INFO 12065 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-21T23:53:01.768+03:00  INFO 12065 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-21T23:53:01.769+03:00  INFO 12065 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-09-21T23:53:01.833+03:00  INFO 12065 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-21T23:53:01.833+03:00  INFO 12065 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1134 ms
+2023-09-21T23:53:01.944+03:00  INFO 12065 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-21T23:53:01.975+03:00  INFO 12065 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-09-21T23:53:01.977+03:00  INFO 12065 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-21T23:53:02.061+03:00  INFO 12065 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-21T23:53:02.138+03:00  INFO 12065 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-21T23:53:02.149+03:00  INFO 12065 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-21T23:53:02.281+03:00  INFO 12065 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@171aa66
+2023-09-21T23:53:02.282+03:00  INFO 12065 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-21T23:53:02.462+03:00  INFO 12065 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-21T23:53:02.910+03:00  INFO 12065 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-21T23:53:02.949+03:00  INFO 12065 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-21T23:53:03.198+03:00  WARN 12065 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-21T23:53:03.977+03:00  INFO 12065 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@15af06f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76876421, org.springframework.security.web.context.SecurityContextHolderFilter@39179470, org.springframework.security.web.header.HeaderWriterFilter@638e8194, org.springframework.security.web.authentication.logout.LogoutFilter@6bc8d8bd, com.bullantus.farseeer.config.JwtAuthenticationFilter@261099e1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2468c0e4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a82453, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c3836b6, org.springframework.security.web.session.SessionManagementFilter@50eae15a, org.springframework.security.web.access.ExceptionTranslationFilter@492d38a2, org.springframework.security.web.access.intercept.AuthorizationFilter@18f794e]
+2023-09-21T23:53:04.207+03:00  WARN 12065 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-09-21T23:53:04.209+03:00  INFO 12065 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-21T23:53:04.216+03:00  INFO 12065 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-21T23:53:04.218+03:00  INFO 12065 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-21T23:53:04.219+03:00  INFO 12065 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-21T23:53:04.233+03:00  INFO 12065 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-09-21T23:53:04.244+03:00 ERROR 12065 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-09-21T23:53:10.362+03:00  INFO 11489 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-21T23:53:10.366+03:00  WARN 11489 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-21T23:53:10.366+03:00  WARN 11489 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "token" does not exist, skipping
+2023-09-21T23:53:10.366+03:00  WARN 11489 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-21T23:53:10.366+03:00  WARN 11489 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "_user" does not exist, skipping
+2023-09-21T23:53:10.367+03:00  WARN 11489 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-21T23:53:10.367+03:00  WARN 11489 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "token" does not exist, skipping
+2023-09-21T23:53:10.367+03:00  WARN 11489 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-21T23:53:10.367+03:00  WARN 11489 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "_user_seq" does not exist, skipping
+2023-09-21T23:53:10.368+03:00  WARN 11489 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-21T23:53:10.368+03:00  WARN 11489 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "token_seq" does not exist, skipping
+2023-09-21T23:53:10.371+03:00  INFO 11489 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-21T23:53:10.374+03:00  INFO 11489 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-21T23:53:32.182+03:00  INFO 12073 --- [main] c.bullantus.farseeer.FarseerApplication  : Starting FarseerApplication using Java 17.0.2 with PID 12073 (/Users/nejatboy/git/farseer/farseer/target/classes started by nejatboy in /Users/nejatboy/git/farseer/farseer)
+2023-09-21T23:53:32.184+03:00  INFO 12073 --- [main] c.bullantus.farseeer.FarseerApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-09-21T23:53:32.769+03:00  INFO 12073 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-21T23:53:32.790+03:00  INFO 12073 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 JPA repository interfaces.
+2023-09-21T23:53:33.342+03:00  INFO 12073 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-21T23:53:33.349+03:00  INFO 12073 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-21T23:53:33.349+03:00  INFO 12073 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-09-21T23:53:33.415+03:00  INFO 12073 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-21T23:53:33.416+03:00  INFO 12073 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1194 ms
+2023-09-21T23:53:33.530+03:00  INFO 12073 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-21T23:53:33.561+03:00  INFO 12073 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-09-21T23:53:33.563+03:00  INFO 12073 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-21T23:53:33.652+03:00  INFO 12073 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-21T23:53:33.731+03:00  INFO 12073 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-21T23:53:33.742+03:00  INFO 12073 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-21T23:53:33.872+03:00  INFO 12073 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2d24cdd9
+2023-09-21T23:53:33.874+03:00  INFO 12073 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-21T23:53:34.050+03:00  INFO 12073 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-21T23:53:34.525+03:00  INFO 12073 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-21T23:53:34.538+03:00  WARN 12073 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-21T23:53:34.538+03:00  WARN 12073 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "token" does not exist, skipping
+2023-09-21T23:53:34.539+03:00  WARN 12073 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-21T23:53:34.539+03:00  WARN 12073 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "_user" does not exist, skipping
+2023-09-21T23:53:34.540+03:00  WARN 12073 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-21T23:53:34.540+03:00  WARN 12073 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "token" does not exist, skipping
+2023-09-21T23:53:34.540+03:00  WARN 12073 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-21T23:53:34.541+03:00  WARN 12073 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "_user_seq" does not exist, skipping
+2023-09-21T23:53:34.541+03:00  WARN 12073 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-21T23:53:34.542+03:00  WARN 12073 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "token_seq" does not exist, skipping
+2023-09-21T23:53:34.561+03:00  INFO 12073 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-21T23:53:34.853+03:00  WARN 12073 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-21T23:53:35.749+03:00  INFO 12073 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5bfeb9ba, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4cf1bd4a, org.springframework.security.web.context.SecurityContextHolderFilter@395c21ee, org.springframework.security.web.header.HeaderWriterFilter@5746609e, org.springframework.security.web.authentication.logout.LogoutFilter@14b9817b, com.bullantus.farseeer.config.JwtAuthenticationFilter@58e4aa67, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@669e730d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@13b5598b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@26619e5, org.springframework.security.web.session.SessionManagementFilter@1a67bde5, org.springframework.security.web.access.ExceptionTranslationFilter@3df54fd5, org.springframework.security.web.access.intercept.AuthorizationFilter@30bfdcc5]
+2023-09-21T23:53:36.129+03:00  INFO 12073 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-21T23:53:36.138+03:00  INFO 12073 --- [main] c.bullantus.farseeer.FarseerApplication  : Started FarseerApplication in 4.284 seconds (process running for 4.596)
+2023-09-21T23:53:44.131+03:00  INFO 12073 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-21T23:53:44.131+03:00  INFO 12073 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-21T23:53:44.133+03:00  INFO 12073 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-09-21T23:53:44.629+03:00  INFO 12073 --- [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 177 ms
+2023-09-21T23:54:05.869+03:00  INFO 12073 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-21T23:54:05.888+03:00  INFO 12073 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-21T23:54:05.890+03:00  INFO 12073 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
