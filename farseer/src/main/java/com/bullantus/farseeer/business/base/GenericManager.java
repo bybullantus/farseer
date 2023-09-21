@@ -20,22 +20,26 @@ public abstract class GenericManager<T extends BaseEntity,K extends IBaseReposit
 	
 	
 	@Override
-	@Async
-	public CompletableFuture<List<T>> getAll() {
-		return CompletableFuture.completedFuture( genericDal.getAll());
+	
+	public List<T> getAll() {
+		return  genericDal.getAll();
 	}
 	
 	@Override
-	@Async
-	public CompletableFuture<T> add(T item) {
-		return CompletableFuture.completedFuture( genericDal.add(item));
+	
+	public T save(T item) {
+		return genericDal.save(item);
 	}
 
+	@Override
+	public List<T> saveAll(List<T> items) {
+		return genericDal.saveAll(items);
+	}
 	
 	@Override
-	@Async
-	public CompletableFuture<T> update(T item) {
-		return CompletableFuture.completedFuture( genericDal.update(item));
+	
+	public T update(T item) {
+		return genericDal.update(item);
 	}
 
 	
@@ -46,9 +50,8 @@ public abstract class GenericManager<T extends BaseEntity,K extends IBaseReposit
 
 	
 	@Override
-	@Async
-	public CompletableFuture<T> getById(Long id) {
-		return CompletableFuture.completedFuture( genericDal.getById(id));
+	public T getById(Long id) {
+		return genericDal.getById(id).orElseThrow(()->new RuntimeException("Data Not Found"));
 	}
 
 	

@@ -1,6 +1,7 @@
 package com.bullantus.farseeer.dataAccess.base;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.hibernate.Session;
 import org.hibernate.query.criteria.HibernateCriteriaBuilder;
@@ -43,7 +44,7 @@ public abstract class GenericRepository<T extends BaseEntity> implements IBaseRe
 
 	@Transactional
 	@Override
-	public T add(T item) {
+	public T save(T item) {
 		
 		//entityManager.unwrap(Session.class).saveOrUpdate(item); return item;
 		 
@@ -52,6 +53,16 @@ public abstract class GenericRepository<T extends BaseEntity> implements IBaseRe
 		return item;
 	}
 
+	@Transactional
+
+	@Override
+	public List<T> saveAll(List<T> items) {
+		Session session = entityManager.unwrap(Session.class);
+		for (T t : items) {
+			session.merge(t);
+		}
+		return items;
+	}
 	@Transactional
 	@Override
 	public T update(T item) {
@@ -64,7 +75,8 @@ public abstract class GenericRepository<T extends BaseEntity> implements IBaseRe
 	@Transactional
 	@Override
 	public void delete(T item) {
-		item.setActive(false);
+		
+		item.setDeleted(true);
 		// entityManager.unwrap(Session.class).saveOrUpdate(item);
 		entityManager.merge(item);
 
@@ -72,7 +84,7 @@ public abstract class GenericRepository<T extends BaseEntity> implements IBaseRe
 	
 	@Transactional
 	@Override
-	public T getById(long id) {
+	public Optional<T> getById(long id) {
 
 		Session session = entityManager.unwrap(Session.class);
 		HibernateCriteriaBuilder builder = session.getCriteriaBuilder();
@@ -81,10 +93,10 @@ public abstract class GenericRepository<T extends BaseEntity> implements IBaseRe
 		criteria.select(table);
 		criteria.where(builder.and(builder.equal(table.get("id"), id), builder.equal(table.get("isDeleted"), false)));
 		TypedQuery<T> query = session.createQuery(criteria);
-		List<T> a = query.getResultList();
-		if (a.size() <= 0)
-			return null;
-		return query.getSingleResult();
+		List<T> list=query.getResultList();
+		if(list==null || list.isEmpty())
+			return Optional.empty();
+		return Optional.of(list.get(0));
 	}
 
 }

@@ -5,13 +5,15 @@ import java.util.concurrent.CompletableFuture;
 
 public interface IBaseService<T> {
 	
-	CompletableFuture<List<T>> getAll();
+	List<T> getAll();
 
-	CompletableFuture<T> add(T item);
+	T save(T item);
 
-	CompletableFuture<T> update(T item);
+	List<T> saveAll(List<T> items);
+	
+	T update(T item);
 
 	void delete(T item);
 
-	CompletableFuture<T> getById(Long id);
+	T getById(Long id);
 }
