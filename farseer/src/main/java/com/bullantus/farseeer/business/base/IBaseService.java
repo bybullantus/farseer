@@ -3,7 +3,9 @@ package com.bullantus.farseeer.business.base;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-public interface IBaseService<T> {
+import com.bullantus.farseeer.entities.base.BaseEntity;
+
+public interface IBaseService<T extends BaseEntity> {
 	
 	List<T> getAll();
 

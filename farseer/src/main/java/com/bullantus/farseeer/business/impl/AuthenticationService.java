@@ -3,7 +3,7 @@ package com.bullantus.farseeer.business.impl;
 
 
 import com.bullantus.farseeer.business.IAuthenticationService;
-import com.bullantus.farseeer.business.base.GenericManager;
+import com.bullantus.farseeer.business.base.GenericService;
 import com.bullantus.farseeer.config.JwtService;
 import com.bullantus.farseeer.dataAccess.ITokenDal;
 import com.bullantus.farseeer.dataAccess.IUserDal;
@@ -29,7 +29,7 @@ import java.io.IOException;
 
 @Service
 @RequiredArgsConstructor
-public class AuthenticationService extends GenericManager<User, IUserDal> implements IAuthenticationService {
+public class AuthenticationService extends GenericService<User, IUserDal> implements IAuthenticationService {
 
  @Autowired
   private  ITokenDal tokenDal;
