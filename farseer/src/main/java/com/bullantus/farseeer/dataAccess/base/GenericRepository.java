@@ -74,12 +74,33 @@ public abstract class GenericRepository<T extends BaseEntity> implements IBaseRe
 
 	@Transactional
 	@Override
+	public List<T> updateAll(List<T> items){
+		Session session = entityManager.unwrap(Session.class);
+		for (T t : items) {
+			session.merge(t);
+		}
+		return items;
+	}
+	
+	@Transactional
+	@Override
 	public void delete(T item) {
-		
+		Session session = entityManager.unwrap(Session.class);
 		item.setDeleted(true);
 		// entityManager.unwrap(Session.class).saveOrUpdate(item);
-		entityManager.merge(item);
+		session.merge(item);
 
+	}
+	
+	@Transactional
+	@Override
+	public void deleteAll(List<T> items) {
+		Session session = entityManager.unwrap(Session.class);
+		for (T t : items) {
+			t.setDeleted(true);
+			session.merge(t);
+		}
+		
 	}
 	
 	@Transactional

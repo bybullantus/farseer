@@ -26,7 +26,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "job_history")
+@Table(name = "job_histories")
 public class JobHistory extends BaseEntity{
 
 	@Id

@@ -1,10 +1,8 @@
 package com.bullantus.farseeer.business.base;
 
 import java.util.List;
-import java.util.concurrent.CompletableFuture;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Async;
 
 import com.bullantus.farseeer.dataAccess.base.IBaseRepository;
 import com.bullantus.farseeer.entities.base.BaseEntity;
@@ -42,18 +40,24 @@ public abstract class GenericService<T extends BaseEntity,K extends IBaseReposit
 		return genericDal.update(item);
 	}
 
+	@Override
+	public List<T> updateAll(List<T> items){
+		return genericDal.updateAll(items);
+	}
 	
 	@Override
 	public void delete(T item) {
 		genericDal.delete(item);
 	}
 
+	@Override
+	public void deleteAll(List<T> items) {
+		genericDal.deleteAll(items);
+	}
 	
 	@Override
 	public T getById(Long id) {
 		return genericDal.getById(id).orElseThrow(()->new RuntimeException("Data Not Found"));
 	}
-
-	
 	    
 }

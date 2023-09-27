@@ -1,0 +1,145 @@
+2023-09-23T00:08:53.226+03:00  WARN 17240 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h34m15s314ms).
+2023-09-23T01:03:03.266+03:00  WARN 17240 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54m10s41ms).
+2023-09-23T01:30:34.266+03:00  WARN 17240 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=27m31s2ms).
+2023-09-23T02:00:06.840+03:00  WARN 17240 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m2s561ms).
+2023-09-23T02:54:01.503+03:00  WARN 17240 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53m54s661ms).
+2023-09-23T03:48:22.566+03:00  WARN 17240 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53m51s30ms).
+2023-09-23T05:36:24.731+03:00  WARN 17240 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h48m1s978ms).
+2023-09-23T09:43:47.503+03:00  WARN 17240 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h6m52s648ms).
+2023-09-23T12:14:14.646+03:00  WARN 17240 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h29m56s845ms).
+2023-09-23T12:14:25.611+03:00  INFO 17240 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-23T12:14:25.701+03:00  INFO 17240 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-23T12:14:25.706+03:00  INFO 17240 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-23T12:20:28.110+03:00  INFO 19410 --- [main] c.bullantus.farseeer.FarseerApplication  : Starting FarseerApplication using Java 17.0.2 with PID 19410 (/Users/nejatboy/git/farseer/farseer/target/classes started by nejatboy in /Users/nejatboy/git/farseer/farseer)
+2023-09-23T12:20:28.112+03:00  INFO 19410 --- [main] c.bullantus.farseeer.FarseerApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-09-23T12:20:28.795+03:00  INFO 19410 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-23T12:20:28.826+03:00  INFO 19410 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 JPA repository interfaces.
+2023-09-23T12:20:29.574+03:00  INFO 19410 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-23T12:20:29.585+03:00  INFO 19410 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-23T12:20:29.585+03:00  INFO 19410 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-09-23T12:20:29.676+03:00  INFO 19410 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-23T12:20:29.677+03:00  INFO 19410 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1513 ms
+2023-09-23T12:20:29.804+03:00  INFO 19410 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-23T12:20:29.838+03:00  INFO 19410 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-09-23T12:20:29.840+03:00  INFO 19410 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-23T12:20:29.936+03:00  INFO 19410 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-23T12:20:30.031+03:00  INFO 19410 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-23T12:20:30.044+03:00  INFO 19410 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-23T12:20:30.208+03:00  INFO 19410 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@602298b
+2023-09-23T12:20:30.209+03:00  INFO 19410 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-23T12:20:30.445+03:00  INFO 19410 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-23T12:20:31.016+03:00  INFO 19410 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-23T12:20:31.030+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:20:31.031+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "countries" does not exist, skipping
+2023-09-23T12:20:31.031+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:20:31.031+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "departments" does not exist, skipping
+2023-09-23T12:20:31.032+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:20:31.032+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "departments" does not exist, skipping
+2023-09-23T12:20:31.033+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:20:31.033+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "employees" does not exist, skipping
+2023-09-23T12:20:31.034+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:20:31.035+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "employees" does not exist, skipping
+2023-09-23T12:20:31.035+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:20:31.035+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "employees" does not exist, skipping
+2023-09-23T12:20:31.036+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:20:31.036+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "job_histories" does not exist, skipping
+2023-09-23T12:20:31.037+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:20:31.037+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "job_histories" does not exist, skipping
+2023-09-23T12:20:31.038+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:20:31.038+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "locations" does not exist, skipping
+2023-09-23T12:20:31.039+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:20:31.039+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "tokens" does not exist, skipping
+2023-09-23T12:20:31.040+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:20:31.040+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "countries" does not exist, skipping
+2023-09-23T12:20:31.041+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:20:31.042+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "departments" does not exist, skipping
+2023-09-23T12:20:31.042+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:20:31.042+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "employees" does not exist, skipping
+2023-09-23T12:20:31.043+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:20:31.043+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "job_histories" does not exist, skipping
+2023-09-23T12:20:31.044+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:20:31.044+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "jobs" does not exist, skipping
+2023-09-23T12:20:31.045+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:20:31.045+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "locations" does not exist, skipping
+2023-09-23T12:20:31.046+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:20:31.046+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "regions" does not exist, skipping
+2023-09-23T12:20:31.048+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:20:31.048+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "tokens" does not exist, skipping
+2023-09-23T12:20:31.049+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:20:31.049+03:00  WARN 19410 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "users" does not exist, skipping
+2023-09-23T12:20:31.099+03:00  INFO 19410 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-23T12:20:31.471+03:00  WARN 19410 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-23T12:20:32.171+03:00  INFO 19410 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a22d69f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7164e54, org.springframework.security.web.context.SecurityContextHolderFilter@4d0e6424, org.springframework.security.web.header.HeaderWriterFilter@73db1a6, org.springframework.security.web.authentication.logout.LogoutFilter@7adde776, com.bullantus.farseeer.config.JwtAuthenticationFilter@51b11186, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a5024eb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@797ca322, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f36cd8f, org.springframework.security.web.session.SessionManagementFilter@562ec518, org.springframework.security.web.access.ExceptionTranslationFilter@33b4c775, org.springframework.security.web.access.intercept.AuthorizationFilter@4607cbe2]
+2023-09-23T12:20:32.488+03:00  INFO 19410 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-23T12:20:32.500+03:00  INFO 19410 --- [main] c.bullantus.farseeer.FarseerApplication  : Started FarseerApplication in 4.752 seconds (process running for 5.154)
+2023-09-23T12:21:02.359+03:00  INFO 19410 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-23T12:21:02.381+03:00  INFO 19410 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-23T12:21:02.384+03:00  INFO 19410 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-23T12:46:41.722+03:00  INFO 20258 --- [main] c.bullantus.farseeer.FarseerApplication  : Starting FarseerApplication using Java 17.0.2 with PID 20258 (/Users/nejatboy/git/farseer/farseer/target/classes started by nejatboy in /Users/nejatboy/git/farseer/farseer)
+2023-09-23T12:46:41.724+03:00  INFO 20258 --- [main] c.bullantus.farseeer.FarseerApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-09-23T12:46:42.305+03:00  INFO 20258 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-23T12:46:42.330+03:00  INFO 20258 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+2023-09-23T12:46:42.880+03:00  INFO 20258 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-23T12:46:42.888+03:00  INFO 20258 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-23T12:46:42.888+03:00  INFO 20258 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-09-23T12:46:42.960+03:00  INFO 20258 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-23T12:46:42.961+03:00  INFO 20258 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1195 ms
+2023-09-23T12:46:43.074+03:00  INFO 20258 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-23T12:46:43.104+03:00  INFO 20258 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-09-23T12:46:43.106+03:00  INFO 20258 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-23T12:46:43.200+03:00  INFO 20258 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-23T12:46:43.283+03:00  INFO 20258 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-23T12:46:43.295+03:00  INFO 20258 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-23T12:46:43.429+03:00  INFO 20258 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@ee2ae9a
+2023-09-23T12:46:43.431+03:00  INFO 20258 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-23T12:46:43.653+03:00  INFO 20258 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-23T12:46:44.185+03:00  INFO 20258 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-23T12:46:44.197+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:46:44.197+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "countries" does not exist, skipping
+2023-09-23T12:46:44.198+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:46:44.198+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "departments" does not exist, skipping
+2023-09-23T12:46:44.199+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:46:44.199+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "departments" does not exist, skipping
+2023-09-23T12:46:44.200+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:46:44.200+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "employees" does not exist, skipping
+2023-09-23T12:46:44.201+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:46:44.202+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "employees" does not exist, skipping
+2023-09-23T12:46:44.203+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:46:44.203+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "employees" does not exist, skipping
+2023-09-23T12:46:44.204+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:46:44.204+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "job_histories" does not exist, skipping
+2023-09-23T12:46:44.205+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:46:44.205+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "job_histories" does not exist, skipping
+2023-09-23T12:46:44.205+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:46:44.206+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "locations" does not exist, skipping
+2023-09-23T12:46:44.206+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:46:44.206+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "tokens" does not exist, skipping
+2023-09-23T12:46:44.207+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:46:44.207+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "countries" does not exist, skipping
+2023-09-23T12:46:44.208+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:46:44.208+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "departments" does not exist, skipping
+2023-09-23T12:46:44.208+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:46:44.208+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "employees" does not exist, skipping
+2023-09-23T12:46:44.209+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:46:44.209+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "job_histories" does not exist, skipping
+2023-09-23T12:46:44.210+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:46:44.210+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "jobs" does not exist, skipping
+2023-09-23T12:46:44.210+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:46:44.210+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "locations" does not exist, skipping
+2023-09-23T12:46:44.211+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:46:44.211+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "regions" does not exist, skipping
+2023-09-23T12:46:44.212+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:46:44.212+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "tokens" does not exist, skipping
+2023-09-23T12:46:44.212+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-09-23T12:46:44.212+03:00  WARN 20258 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "users" does not exist, skipping
+2023-09-23T12:46:44.262+03:00  INFO 20258 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-23T12:46:44.584+03:00  WARN 20258 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-23T12:46:45.382+03:00  INFO 20258 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@186e254, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a827b0c, org.springframework.security.web.context.SecurityContextHolderFilter@2c28654e, org.springframework.security.web.header.HeaderWriterFilter@452d6fd, org.springframework.security.web.authentication.logout.LogoutFilter@18c432ed, com.bullantus.farseeer.config.JwtAuthenticationFilter@3b1895e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47b71556, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5fa3df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39ee07a9, org.springframework.security.web.session.SessionManagementFilter@45689582, org.springframework.security.web.access.ExceptionTranslationFilter@1c3400df, org.springframework.security.web.access.intercept.AuthorizationFilter@230e163b]
+2023-09-23T12:46:45.641+03:00  INFO 20258 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-23T12:46:45.649+03:00  INFO 20258 --- [main] c.bullantus.farseeer.FarseerApplication  : Started FarseerApplication in 4.262 seconds (process running for 4.698)
+2023-09-23T12:47:04.982+03:00  INFO 20258 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-23T12:47:04.982+03:00  INFO 20258 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-23T12:47:04.984+03:00  INFO 20258 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-09-23T12:53:08.648+03:00  INFO 20258 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-23T12:53:08.674+03:00  INFO 20258 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-23T12:53:08.676+03:00  INFO 20258 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

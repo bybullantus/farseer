@@ -22,10 +22,9 @@ server:
    port: 8080
    
 logging:
-   pattern:
-      rolling-file-name: farseerlog-%d{yyyy-MM-dd}.%i.log
    file:
       name: farseerlog.log
+   logback.rollingpolicy.file-name-pattern: farseerlog-%d{yyyy-MM-dd}.%i.log
    
 
 
